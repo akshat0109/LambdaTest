@@ -1,6 +1,9 @@
 #!/bin/sh
-read -p "Your link here: "
-echo "$REPLY" > output.txt
+echo  "Your link here: "
+read url
+echo "$url" > output.txt
+
+#$url > output.txt
 cp output.txt chromexecutiondocker
 cp output.txt firefoxexecutiondocker
 
